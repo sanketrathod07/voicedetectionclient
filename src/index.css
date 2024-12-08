@@ -11,3 +11,540 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Space out left and right sections */
+  align-items: center;
+  /* Vertically center the items */
+  padding: 20px;
+  background-color: rgba(18, 18, 18, 0.7);
+  /* Semi-transparent background for navbar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left Section of Navbar (for Voice Recognition) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Voice Recognition Text */
+.voice-recognition-name {
+  margin-right: 20px;
+  /* Space it from the right-side buttons */
+  color: #ffffff;
+  font-size: 8.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.voice-recognition-name:hover {
+  color: #42a5f5;
+  /* Change color on hover */
+}
+
+/* Right Section of Navbar (for other links) */
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  /* Align buttons to the right */
+}
+
+.navbar-right a {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-right a:hover {
+  color: #42a5f5;
+  /* Change color on hover */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #121212;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.vectorstock.com/i/500p/10/41/concept-of-voice-recognition-vector-22781041.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+/* Adding a dark overlay to the background */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.582);
+  z-index: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: rgba(18, 18, 18, 0.7);
+  /* Semi-transparent background for navbar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #42a5f5;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.hero-main-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Login Box */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+  margin-top: 20px;
+}
+
+.login-box h2 {
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0d47a1;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #1e88e5;
+}
+
+.register-link {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.register-link a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Login Box Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-links a:hover {
+  color: #42a5f5;
+}
+
+/* Hero Section */
+
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Login Box */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+  margin-top: 20px;
+}
+
+.login-box h2 {
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0d47a1;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #1e88e5;
+}
+
+.register-link {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.register-link a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Login Box Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Title Animation */
+@keyframes titlePulse {
+  from {
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(66, 165, 245, 0.8), 0 0 20px rgba(66, 165, 245, 0.6);
+  }
+
+  to {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(66, 165, 245, 1), 0 0 40px rgba(66, 165, 245, 0.8);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #121212;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo h2 {
+  color: #42a5f5;
+  font-size: 1.5rem;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #42a5f5;
+}
+
+/* Add padding-top to the hero section to offset the fixed navbar */
+.hero {
+  padding-top: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #121212;
+}
+
+/* Hero Section */
+
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1e88e5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+#transcription {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1 1 200px;
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #42a5f5;
+  margin-bottom: 10px;
+}
+
+/* Demo Section */
+.demo {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #0d47a1;
+}
+
+.demo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#live-transcription {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  background: #1e88e5;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #121212;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+/* App.css */
+
+.prediction-output {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.prediction-output h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #003366;
+}
+
+.prediction-output p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 1rem;
+}
